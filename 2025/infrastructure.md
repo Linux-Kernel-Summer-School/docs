@@ -173,8 +173,6 @@ which can be downloaded from here (TODO).
 
 ---
 
-[^1]: This might not be free anymore. In case you don't already have this VMM
-or the university doesn't provide free licenses anymore just go with VirtualBox.
+[^1]: This might not be free anymore. In case you don't already have this VMM or the university doesn't provide free licenses anymore just go with VirtualBox.
 
-[^2]: If you do wish to use a virtual machine then please follow the steps from
-the "Setting up the infrastructure for Windows-based systems" section.
+[^2]: If you do wish to use a virtual machine then please follow the steps from the "Setting up the infrastructure for Windows-based systems" section.
