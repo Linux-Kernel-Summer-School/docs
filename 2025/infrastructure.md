@@ -17,7 +17,7 @@ Before setting up the virtual machine, we're going to first have to install a vi
 machine manager (VMM). Some examples of free VMMs include:
 
 1. VirtualBox ([download page](https://www.virtualbox.org/wiki/Downloads))
-2. VMWare Workstation Player [^1]
+2. VMWare Workstation Player[^1]
 
 Using any of the VMMs listed above is fine. If you already have one of them installed
 then just go with that one :). You're also free to use any other VMM you wish although
@@ -138,7 +138,7 @@ administrator and re-install.
 ## Setting up the infrastructure for Linux-based systems
 
 Since you're already using a Linux-based distribution, you won't necessarily be
-needing a virtual machine [^2]. Consequently, all that's left for you to do is
+needing a virtual machine[^2]. Consequently, all that's left for you to do is
 install the packages we'll be using for development and clone the LKSS repositories.
 To install the required packages please run:
 
@@ -171,8 +171,10 @@ git clone https://github.com/Linux-Kernel-Summer-School/lkss-utils
 Additionally, when booting the board, we're going to be needing a filesystem,
 which can be downloaded from here (TODO).
 
+---
 
 [^1]: This might not be free anymore. In case you don't already have this VMM
 or the university doesn't provide free licenses anymore just go with VirtualBox.
+
 [^2]: If you do wish to use a virtual machine then please follow the steps from
 the "Setting up the infrastructure for Windows-based systems" section.
