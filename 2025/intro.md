@@ -13,6 +13,7 @@ Linux kernel, you gain the ability to:
 - Understand system-level programming on real hardware
 - Get a grasp of software int he embedded world
 - Contribute to open-source projects or develop your own
+
 ---
 
 ## Hardware Platform: FRDM-i.MX93
