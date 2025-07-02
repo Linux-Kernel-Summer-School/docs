@@ -40,7 +40,7 @@ GPIOs.
 | Day    | Title                                | Description                                                    | Files                             |
 |--------|--------------------------------------|----------------------------------------------------------------|-----------------------------------|
 | Day 1  | **Introduction to Linux Kernel**     | Overview of kernel structure, module development, and logging  | [Lab](./day1.md), [Slides](./day1_slides) |
-| Day 2  | **Simple Character Driver**          | Character driver, file ops, control a buzzer from userspace    | [Lab](./day2.md), [Slides](./day2_slides) |
+| Day 2  | **Simple Character Driver**          | Character driver, file ops, control a LED from userspace       | [Lab](./day2.md), [Slides](./day2_slides) |
 | Day 3  | **Interacting with Hardware**        | Read sensor values via I2C, use GPIO and kernel timers         | [Lab](./day3.md), [Slides](./day3_slides) |
 | Day 4  | **Putting It All Together**          | Full integration: sensors, LEDs, buzzer, GPIO-controlled logic | [Lab](./day4.md), [Slides](./day4_slides) |
 
