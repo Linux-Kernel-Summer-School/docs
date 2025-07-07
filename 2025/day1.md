@@ -1,6 +1,6 @@
 # Day 1 – Introduction to Linux Kernel
 
-Slides: [day1_slides](./day1_slides)
+Slides: [day1_slides](./slides/slides_day1.pdf)
 
 ## Description
 
