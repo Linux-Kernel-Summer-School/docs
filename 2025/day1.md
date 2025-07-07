@@ -140,7 +140,7 @@ so that the next boot will see our last compiled modules.
    Use the `boot_imx93.sh` script in order to boot the board.
    ```bash
    $ cd ~/lkss-utils/2025/
-   $ ./boot <path/to/Image> <path/to/device.dtb> <path/to/rootfs.ext2>
+   $ ./boot_imx93.sh <path/to/Image> <path/to/device.dtb> <path/to/rootfs.ext2>
    ```
 ---
 
