@@ -37,7 +37,7 @@ cloned.
 >
 > ```bash
 > cd ~/linux  # or navigate to the location where you cloned the repo
-> git pull origin main
+> git pull origin dev
 > ```
 >
 > Make sure you are on the correct branch (that is `main` branch).
@@ -54,6 +54,95 @@ cloned.
 > Navigate to `drivers/lkss/labs/lab1/` lab directory to begin your work.
 >
 > ---
+
+### Linux kernel Image compilation
+
+1. **Source the environment**  
+   Create `setenv.sh` file with the content below.
+   ```bash
+   $ cat ~/setenv.sh
+   $ export ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-
+   ```
+   and source in the terminal to be used for kernel Image and modules compilation
+   ```bash
+   $ source ~/setenv.sh
+   ```
+2. **Compile the kernel Image, dtb** (this needs to be done only once)
+   ```bash
+   $ cd ~/linux
+   # create the default config file
+   $ make imx93frdm_defconfig
+   # start compilation 
+   $ make -j8
+   ```
+   This will create the kernel `Image` at `~/linux/arch/arm64/boot/Image` and the `dtb`
+   at `~/linux/arch/arm64/boot/dts/freescale/imx93-11x11-frdm.dtb`
+
+---
+
+### Linux kernel modules compilation
+
+1. **Source the environment**  
+   Create `setenv.sh` file with the content below.
+   ```bash
+   $ cat ~/setenv.sh
+   $ export ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu-
+   ```
+   and source in the terminal to be used for kernel Image and modules compilation
+   ```bash
+   $ source ~/setenv.sh
+   ```
+
+2. **Select the kernel modules for compilation**  
+   ```bash
+   $ cd ~/linux/
+   $ make menuconfig
+   ```
+   Select `M` to compile a module. Go to `Device drivers` -> `Linux kernel Summer School Drivers`.
+
+3. **Compile the kernel modules selected**  
+   After selecting the  modules, compile them:
+   ```bash
+   $ cd ~/linux/
+   $ make M=drivers/lkss/lab1 modules
+   ```
+---
+
+#### Prepare board boot
+
+At this point we already have `Image` and `dtb` ready. We now need to prepare the rootfs with the update kernel modules
+so that the next boot will see our last compiled modules.
+
+1. **Clone the lkss-utils repo**  
+   ```bash
+   $ git clone https://github.com/Linux-Kernel-Summer-School/lkss-utils.git
+   ```
+   This repo will contain some prebuilt `Image` and `dtb`. They work fine to boot the board, but in order to test your
+   modules you need to use you own `Image` and `dtb`. They are located under `~/linux/arch/arm64/boot/Image` and
+   `~/linux/arch/arm64/boot/dts/freescale/imx93-11x11-frdm.dtb`.
+
+2. **Download the rootfs**  
+   Download the `rootfs` from [here](https://github.com/Linux-Kernel-Summer-School/buildroot/actions/runs/16078651144/artifacts/3467623530)
+   and store it` ~/lkss-utils/2025/`
+
+3. **Copy newly compiled modules to the rootfs**  
+   ```bash
+   $ cd ~/lkss-utils/2025
+   $ ./rootfs_util modules_install ./rootfs.ext2 ~/linux/
+   ```
+   This will install the linux kernel modules to the rootfs file.
+
+---
+
+#### Boot the board
+
+1. **Boot the board**  
+   Use the `boot_imx93.sh` script in order to boot the board.
+   ```bash
+   $ cd ~/lkss-utils/2025/
+   $ ./boot <path/to/Image> <path/to/device.dtb> <path/to/rootfs.ext2>
+   ```
+---
 
 ### Exercise 1: A simple Hello World kernel module
 
