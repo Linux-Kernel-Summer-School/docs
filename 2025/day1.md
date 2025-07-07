@@ -134,13 +134,19 @@ so that the next boot will see our last compiled modules.
 
 ---
 
-#### Boot the board
+#### Boot the board and open the serial console
 
-1. **Boot the board**  
+1. **Open the serial console**
+   ```bash
+   $ minicom -D /dev/ttyACM0
+   ```
+
+2. **Boot the board**  
    Use the `boot_imx93.sh` script in order to boot the board.
    ```bash
    $ cd ~/lkss-utils/2025/
    $ ./boot_imx93.sh <path/to/Image> <path/to/device.dtb> <path/to/rootfs.ext2>
+   $ E.g: /boot_imx93.sh ~/linux/arch/arm64/boot/Image ~/linux/arch/arm64/boot/dts/freescale/imx93-11x11-frdm.dtb ./rootfs.ext2
    ```
 ---
 
