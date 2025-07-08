@@ -22,53 +22,24 @@ This lab introduces key concepts in Linux kernel module development, with a focu
 
 ## Linux and Board Setup
 
-### Initial Linux Kernel Compilation Setup for i.MX93 FRDM (ARM64)
+Please use the following [cheatsheet](./cheatsheet.md)!
 
-1. **Set up the environment for ARM64 architecture and cross-compilation:**
-```bash
-$ source setenv
-```
+1. Before starting the lab exercises, perform this action **once** at the beginning.
+   - [Update linux repo](./cheatsheet.md#Updating the Linux kernel repository)
+   - [Update the lkss-utils repo](./cheatsheet.md#Updating the utilities repository)
 
-2. **Configure the kernel for the i.MX93 FRDM board:**
-```bash
-$ make imx93frdm_defconfig
-```
-This only needs to be run once, during the initial setup of your Linux environment for i.MX93 development.
+2. To test a module after each update, follow these steps:
+  - [Enable and compile a kernel module](./cheatsheet.md#Enabling a kernel module)
+  - [Install the kernel to rootfs](./cheatsheet.md#Installing the kernel modules in the rootfs)
+  - [Boot the board](./cheatsheet.md#Booting the board)
 
-3. **(Optional) Customize the kernel configuration (e.g., for new labs or exercises):**
-```bash
-$ make menuconfig
-```
-This needs to be run each time you want to enable or disable a new module (or new lab, or exercise).
-
-4. **Build the kernel and modules:**
-```bash
-$ make -j8
-```
-Update the value `8` to match the number of threads supported by your machine.
-
-### Update Root Filesystem with New Kernel Modules
-
-From the directory `/home/student/work/repos/lkss-utils/2025`, run:
-```bash
-$ ./rootfs_util modules_install /home/student/work/repos/lkss-utils/2025/rootfs.ext2 /home/student/work/repos/linux/
-```
-
-### Boot the Board with the New Kernel
-
-Still in `/home/student/work/repos/lkss-utils/2025`, boot the board using:
-```bash
-$ ./boot_imx93.sh \
-  /home/student/work/repos/linux/arch/arm64/boot/Image \
-  /home/student/work/repos/linux/arch/arm64/boot/dts/freescale/imx93-11x11-frdm.dtb \
-  /home/student/work/repos/lkss-utils/2025/rootfs.ext2
-```
+---
 
 ## Lab Exercises
 
 Before starting this lab, please make sure you enable **CONFIG_LKSS_DRIVERS_LAB2**.
 
-**HINT**: Use `make menuconfig`
+**HINT**: Use `ARCH=arm64 CROSS_COMPILE=aarch64-linux-gnu- make menuconfig `
 
 ### Exercise 1: Simple Character Driver – File Operations
 
