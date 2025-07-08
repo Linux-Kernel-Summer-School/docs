@@ -98,8 +98,9 @@ $ cat /dev/simple_char
 ```bash
 $ ./test_simple_char
 ```
-7. Cleanup
+7. Cleanup  
 - Use `rmmod simple_char` and `rm /dev/simple_char` when done.
+
 ---
 
 ### Exercise 2: Character Driver with String Reversal Logic
@@ -133,8 +134,9 @@ $ cat /dev/reverse_char
 ```bash
 $ ./test_reverse_char
 ```
-8. Cleanup
+8. Cleanup  
 - Unload the module with `rmmod`.
+
 ---
 
 ### Exercise 3: GPIO LED Control – On/Off Using Write
@@ -176,8 +178,9 @@ This demonstrates how to use kernel GPIO APIs to interact with hardware and expo
 ```bash
 $ ./test_gpio_led
 ```
-8. Cleanup
+8. Cleanup  
 - Unload the module with `rmmod`.
+
 ---
 
 ### Exercise 4: GPIO LED Control via ioctl
@@ -204,8 +207,9 @@ A user space application will use these commands to control the LED, demonstrati
 ```bash
 $ ./test_gpio_led_ioctl
 ```
-6. Cleanup
+6. Cleanup  
 - Unload the module with `rmmod`.
+
 ---
 
 ### Exercise 5: GPIO LED Blinking Using Timer
@@ -239,8 +243,10 @@ This exercise introduces periodic task execution in kernel space and demonstrate
 ```bash
 $ ./test_gpio_led_blink
 ```
-8. Cleanup
+8. Cleanup  
 - Unload the module with `rmmod`.
+
+---
 
 ## Resources
 
