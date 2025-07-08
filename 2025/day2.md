@@ -30,7 +30,7 @@ Please use the following [cheatsheet](./cheatsheet.md)!
 
 2. To test a module after each update, follow these steps:
   - [Enable and compile a kernel module](./cheatsheet.md#Enabling a kernel module)
-  - [Install the kernel to rootfs](./cheatsheet.md#Installing the kernel modules in the rootfs)
+  - [Install the kernel modules to rootfs](./cheatsheet.md#Installing the kernel modules in the rootfs)
   - [Boot the board](./cheatsheet.md#Booting the board)
 
 ---
