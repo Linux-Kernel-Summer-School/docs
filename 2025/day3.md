@@ -19,15 +19,16 @@ handling interrupts, and interacting with hardware through device tree bindings.
 
 ---
 
+## Before getting started
+
+Check that:
+   - You are using the [latest](https://github.com/Linux-Kernel-Summer-School/buildroot/releases/download/lkss-2025-v3/rootfs.ext2) `rootfs.ext2`
+   - [you've updated the Linux kernel repository](./cheatsheet.md#Updating the Linux kernel repository)
+   - [you've updated the utilities repository](./cheatsheet.md#Updating the utilities repository)
+
 ## Linux and Board Setup
 
-Please use the following [cheatsheet](./cheatsheet.md)!
-
-1. Before starting the lab exercises, perform this action **once** at the beginning.
-   - [Update linux repo](./cheatsheet.md#Updating the Linux kernel repository)
-   - [Update the lkss-utils repo](./cheatsheet.md#Updating the utilities repository)
-
-2. To test a module after each update, follow these steps:
+To test a module after each update, follow these steps:
   - [Enable and compile a kernel module](./cheatsheet.md#Enabling a kernel module)
   - [Install the kernel modules to rootfs](./cheatsheet.md#Installing the kernel modules in the rootfs)
   - [Boot the board](./cheatsheet.md#Booting the board)
