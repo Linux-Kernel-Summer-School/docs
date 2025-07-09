@@ -22,7 +22,7 @@ handling interrupts, and interacting with hardware through device tree bindings.
 ## Before getting started
 
 Check that:
-   - You are using the [latest](https://github.com/Linux-Kernel-Summer-School/buildroot/releases/download/lkss-2025-v3/rootfs.ext2) `rootfs.ext2`
+   - You are using the [latest](https://github.com/Linux-Kernel-Summer-School/buildroot/releases/download/lkss-2025-v4/rootfs.ext2) `rootfs.ext2`
    - [you've updated the Linux kernel repository](./cheatsheet.md#Updating the Linux kernel repository)
    - [you've updated the utilities repository](./cheatsheet.md#Updating the utilities repository)
 
