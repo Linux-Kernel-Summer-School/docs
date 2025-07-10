@@ -189,7 +189,7 @@ Once you're done, you can test your driver by following these steps:
 mknod /dev/led_dimmer c 51 0
 ```
 
-- Run the test script found under `lab-tests/lab4/led_dimmer`:
+- Run the `test_led_timmer` test script as follows:
 
 ```bash
 # the value of the duty_cycle parameter will have to be in the [0, 100] range
@@ -242,7 +242,7 @@ Once you're done, you can test your driver by following these steps:
 mknod /dev/rgb_led c 52 0
 ```
 
-- Run the test script found under `lab-tests/lab4/test_rgb_led`:
+- Run the `test_rgb_led` test script as follows:
 
 ```bash
 ./lab-tests/lab4/test_rgb_led /dev/led_dimmer
