@@ -245,7 +245,7 @@ mknod /dev/rgb_led c 52 0
 - Run the `test_rgb_led` test script as follows:
 
 ```bash
-./lab-tests/lab4/test_rgb_led /dev/led_dimmer
+./lab-tests/lab4/test_rgb_led /dev/rgb_led
 ```
 
 ---
