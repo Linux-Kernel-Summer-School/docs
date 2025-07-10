@@ -1,6 +1,6 @@
 # Day 2 – Linux Kernel Modules: Character Device Drivers, GPIO, and User Space Communication
 
-Slides: [day2_slides](./day2_slides)
+Slides: [day2_slides](./slides/slides_day2.pdf)
 
 ## Description
 
