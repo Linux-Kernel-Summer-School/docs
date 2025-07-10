@@ -1,7 +1,6 @@
 # Day 3 – Interacting with hardware: buttons and leds
 
-Slides: [day3_slides](./day3_slides)
-
+Slides: [day3_slides](./slides/slides_day3.pdf)
 ## Description
 
 This lab introduces students to the fundamentals of Linux kernel GPIO drivers through a
