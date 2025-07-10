@@ -40,9 +40,9 @@ GPIOs.
 | Day    | Title                                | Description                                                    | Files                             |
 |--------|--------------------------------------|----------------------------------------------------------------|-----------------------------------|
 | Day 1  | **Introduction to Linux Kernel**     | Overview of kernel structure, module development, and logging  | [Lab](./day1.md), [Slides](./slides/slides_day1.pdf) |
-| Day 2  | **Simple Character Driver**          | Character driver, file ops, control a LED from userspace       | [Lab](./day2.md), [Slides](./day2_slides) |
-| Day 3  | **GPIO basics and API**              | Understand how GPIOs work and use the Linux GPIO API           | [Lab](./day3.md), [Slides](./day3_slides) |
-| Day 4  | **PWM basics and API**               | Understand how PWM works and use the Linux PWM API             | [Lab](./day4.md), [Slides](./day4_slides) |
+| Day 2  | **Simple Character Driver**          | Character driver, file ops, control a LED from userspace       | [Lab](./day2.md), [Slides](./slides/slides_day2.pdf)) |
+| Day 3  | **GPIO basics and API**              | Understand how GPIOs work and use the Linux GPIO API           | [Lab](./day3.md), [Slides](./slides/slides_day3.pdf)) |
+| Day 4  | **PWM basics and API**               | Understand how PWM works and use the Linux PWM API             | [Lab](./day4.md), [Slides](./slides/slides_day4.pdf)) |
 
 ---
 
