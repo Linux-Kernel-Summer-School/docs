@@ -159,7 +159,7 @@ complete ourselves.
 - Open the DTS (i.e. `imx93-11x11-frdm.dts`) and enable the `led-dimmer` node.
 **Make sure all of the other nodes are disabled.**
 
-- Open the `drivers/lkss/lab3/led_dimmer.c` file.
+- Open the `drivers/lkss/lab4/led_dimmer.c` file.
 
 - **(TODO 1)** Request a PWM channel during the driver's `probe()` function and release it during `remove()`.
 
